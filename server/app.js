@@ -12,7 +12,8 @@ app.use(express.static("public")); //express.static - to use local files by serv
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/signup.html");
+  //res.sendFile(__dirname + "/signup.html");
+  res.send("hello");
 });
 
 app.post("/", function (req, res) {
