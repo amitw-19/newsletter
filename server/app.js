@@ -17,10 +17,9 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "public", "signup.html"));
 });
 
-app.get("/hello"),
-  function (req, res) {
-    res.send("hello from vercel");
-  };
+app.get("/hello", function (req, res) {
+  res.send("hello from vercel");
+});
 
 app.post("/", function (req, res) {
   const firstName = req.body.fName;
